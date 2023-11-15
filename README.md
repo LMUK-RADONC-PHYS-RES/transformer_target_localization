@@ -4,7 +4,7 @@ patient-specific training strategies.
 
 Elia Lombardo\
 LMU Munich\
-Elia.Lombardo@med.uni-muenchen.de\
+Elia.Lombardo@med.uni-muenchen.de
 
 Evaluated with Python version 3.8.13 and PyTorch version 1.13.0
 
