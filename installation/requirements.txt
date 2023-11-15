@@ -1,0 +1,15 @@
+ipywidgets==7.6.5
+moviepy==1.0.3
+openpyxl==3.0.10
+scikit-posthocs==0.6.7
+SimpleITK==1.2.4
+torchio==0.18.73
+easyocr==1.4.2
+natsort==8.3.1
+timm==0.6.13
+ml-collections==0.1.1
+pystrum==0.2
+dcmrtstruct2nii==1.0.18
+num2words==0.5.12
+wandb==0.15.4
+
