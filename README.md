@@ -1,4 +1,4 @@
-# Transformer training strategies for real-time 2D target tracking in MRI-guided radiotherapy
+# Transformers for real-time 2D target tracking in MRI-guided radiotherapy
 Framework to train image registration Transformer networks with different unsupervised, supervised and 
 patient-specific training strategies.
 
@@ -15,7 +15,7 @@ while mounting the `transformer_target_localization` folder.
 * Open `transformer_target_localization/code/config.py` and change `path_project` to the path inside the Docker 
 container to the `transformer_target_localization` folder.
 * If you do not want to use Weights and Biases to keep track of your trainings, delete everything related 
-to `wandb` in the scripts. Otherwise, set your wandb API key in `transformer_target_localization/code/config.py` line 75.
+to `wandb` in the scripts or set `wand_usage=False` in `config.py` line 80. Otherwise, set your wandb API key in `transformer_target_localization/code/config.py` line 75.
 
 ## Usage
 * In the file  `transformer_target_localization/code/config.py` you can set all the options for your
@@ -51,7 +51,8 @@ proper inferece with statics is perfomed with the `main_infer` scripts:
     Then execute `python main_infer_TransMorph.py` in the terminal to run TransMorph-PS models on the validation set (or testing set by changing `inference`). 
     * Set `inferece='validation'` and `model_name='Bspline'` in `config.py`. Then execute `python main_infer_Bspline.py` 
     to run Bspline on the dataset specified in `inference`. Change `Bspline` to `NoReg` or `InterObserver` to run these models instead.
-* The weights of the models, metrics, plots, etc. will be saved under `transformer_target_localization/results`.
+* The weights of the models, metrics, plots, etc. will be saved under `transformer_target_localization/results`. 
+For the pre-trained TransMorph we provided the trained weights under `results/training/TransMorph2D/2023-09-14-07:20:12`.
 
 ## Publication
 If you use this code in a scientific publication, please cite our paper: 

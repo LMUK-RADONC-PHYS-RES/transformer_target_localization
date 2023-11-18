@@ -103,10 +103,10 @@ if model_name == 'TransMorph2D':
     load_state = False      # continue training with current best model/optimizer for epoch_nr epochs or load model for inferece
     if load_state: 
         # specify model 
-        # start_time_string = '2023-09-14-07:20:12'   # unsup
+        start_time_string = '2023-09-14-07:20:12'   # unsup --> this one has uploaded weights!
         # start_time_string = '2023-09-14-07:20:12_supervised_2023-10-02-15:15:24'   # unsup+sup
         # start_time_string = '2023-09-14-07:20:12_ps_2023-10-15-14:59:20'    # unsup+ps (val)
-        start_time_string = '2023-09-14-07:20:12_ps_2023-10-18-09:26:11'    # unsup+ps (test)
+        # start_time_string = '2023-09-14-07:20:12_ps_2023-10-18-09:26:11'    # unsup+ps (test)
     batch_size = 2     # 2, 16, 64, 128, 192
     lr = 0.00001    # learning rate
     lr_scheduler = None   # None, WarmupCosine
