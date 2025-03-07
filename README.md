@@ -18,6 +18,7 @@ container to the `transformer_target_localization` folder.
 to `wandb` in the scripts or set `wand_usage=False` in `config.py` line 80. Otherwise, set your wandb API key in `transformer_target_localization/code/config.py` line 75.
 
 ## Usage
+* You should change the function `get_paths_dict` in `transformer_target_localization/code/auxiliary/utils.py` which gets pairs of fixed and moving image file paths to work with the folder structure of your data.
 * In the file  `transformer_target_localization/code/config.py` you can set all the options for your
 models, e.g. what type of training to perform and all hyper-parameter settings. 
 * After that, run the corresponding main script in the terminal. For instance:
@@ -56,4 +57,4 @@ For the pre-trained TransMorph we provided the trained weights under `results/tr
 
 ## Publication
 If you use this code in a scientific publication, please cite our paper: 
-https:xxx
+https://doi.org/10.1016/j.ijrobp.2024.10.021
